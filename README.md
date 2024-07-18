@@ -20,6 +20,7 @@ PyTorch v2.1.0
         
 ### Dependency
     <Home>
+    sudo apt update
 
     <recomended>
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
@@ -61,4 +62,6 @@ PyTorch v2.1.0
     cd yolov8
     git checkout v8.0
     pip3 install -r requirements.txt
-    
+
+    <Test>
+        
