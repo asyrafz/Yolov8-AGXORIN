@@ -66,4 +66,4 @@ PyTorch v2.1.0
     pip3 install -r requirements.txt
 
     <Test>
-        
+    yolo task=detect mode=predict model=yolov8n.pt source=1 --show=true
