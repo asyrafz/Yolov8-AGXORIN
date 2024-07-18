@@ -35,6 +35,8 @@ PyTorch v2.1.0
     python3 setup.py install --user
     
 ### Path reg
+    nano /home/$USER/.bashrc
+
     export PATH=/usr/local/cuda-11.4/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH
     
