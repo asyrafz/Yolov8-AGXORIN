@@ -19,16 +19,46 @@ PyTorch v2.1.0
         Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
         
 ### Dependency
+    <Home>
 
-    sudo apt-get install libmpi-dev
-
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+    <recomended>
+    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
+    pip3 install 'Cython<3'
     
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev <option>
+    <option>
+    sudo apt-get install libmpi-dev
+    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
+    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
 
+    
+    python3 setup.py install --user
+    
 ### Path reg
+    export PATH=/usr/local/cuda-11.4/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH
+    
+    export PATH=/home/agx_orin/.local/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/lib/openblas-base/
+    export BUILD_VERSION=0.16.1
 
 
-### TORCH 
-pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+
+### TORCH - 2.1.0
+    <Home>
+    
+    pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+
+
+### TORCHVISION - 0.16.1
+    git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision
+
+    cd torchvision
+
+    python3 setup.py install --user
+
+### YOLOv8
+    git clone https://github.com/ultralytics/yolov8.git
+    cd yolov8
+    git checkout v8.0
+    pip3 install -r requirements.txt
     
