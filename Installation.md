@@ -97,6 +97,8 @@ PyTorch v2.1.0
     pip3 install 'Cython<3'
     pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
     
+ ### try esok tapi kene ubah gpu 113
+    pip install torch==2.1.0 torchvision==0.16.1 --index-url https://download.pytorch.org/whl/cu113
     
 ###TEST TORCH with cuda
     import torch;
