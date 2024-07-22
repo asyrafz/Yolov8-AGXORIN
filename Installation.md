@@ -62,7 +62,7 @@ PyTorch v2.1.0
     JetPack 5.1 (L4T R35.2.1) / JetPack 5.1.1 (L4T R35.3.1) / JetPack 5.1.2 (L4T R35.4.1)
         Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
 
-### TORCHVISION - 0.16.1
+### TORCHVISION - 0.16.1 --mungkin 0.16.0
     git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision
 
     cd torchvision
