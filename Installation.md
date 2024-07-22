@@ -13,7 +13,7 @@ Tutorial Setup Yolov8 into Jetson AGX Orin Developer Kit
 ## Extra
     sudo apt-get update && sudo apt-get install python-pip python3-pip
 
-Jtop:
+    Jtop:
     sudo pip3 install -U jetson-stats
 
 then, reboot
