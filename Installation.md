@@ -65,9 +65,9 @@ PyTorch v2.1.0
 ### TORCHVISION - 0.16.1
     
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev;
-    
+    <https://forums.developer.nvidia.com/t/cannot-compile-torchvision-0-16/289075/7>
     git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision;  # ade yg buat jadi
-    https://github.com/pytorch/vision torchvision <download pastu paste kat home >
+    https://github.com/pytorch/vision torchvision <xpun download pastu paste kat home >
     cd torchvision
     export BUILD_VERSION=0.16.1;
     python3 setup.py install --user;
