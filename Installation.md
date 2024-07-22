@@ -27,6 +27,10 @@ PyTorch v2.1.0
         Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
 
 ### Path reg
+    sudo apt update
+    
+    sudo apt-get install nano
+    
     nano /home/$USER/.bashrc
 
     export PATH=/usr/local/cuda-11.4/bin:$PATH
