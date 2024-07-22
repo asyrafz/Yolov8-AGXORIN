@@ -67,7 +67,7 @@ PyTorch v2.1.0
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev;
     
     git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision;  # ade yg buat jadi
-    https://github.com/pytorch/vision torchvision <download pastu paste kat home>
+    https://github.com/pytorch/vision torchvision <download pastu paste kat home >
     cd torchvision
     export BUILD_VERSION=0.16.1;
     python3 setup.py install --user;
@@ -75,12 +75,12 @@ PyTorch v2.1.0
     
 ### TORCH - 2.1.0
     <Goto link Download torch 2.1.0>
-    cd Downloads;
+    cd Downloads; <atau paste ke Home>
     
     pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
 
     <atau>
-    wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+    
     pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
     
     <try>
