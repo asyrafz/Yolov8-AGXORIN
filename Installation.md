@@ -59,10 +59,13 @@ then, reboot
 ### LINK
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
 
+Jetpack 5
 PyTorch v2.1.0
 
     JetPack 5.1 (L4T R35.2.1) / JetPack 5.1.1 (L4T R35.3.1) / JetPack 5.1.2 (L4T R35.4.1)
         Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
+
+    
     
 ### TORCH - 2.1.0
     <Goto link Download torch 2.1.0>
