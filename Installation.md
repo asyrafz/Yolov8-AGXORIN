@@ -47,6 +47,11 @@ then, reboot
 
     
     python3 setup.py install --user  #error skip bawah
+    
+### Enviroment
+    sudo apt install python3.8-venv;
+    python3 -m venv yolov8_env;
+    source yolov8_env/bin/activate;
 
 
 ### LINK
