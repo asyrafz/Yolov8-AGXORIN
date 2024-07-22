@@ -11,10 +11,12 @@ Tutorial Setup Yolov8 into Jetson AGX Orin Developer Kit
 - Jetpack: 5.1.2
 
 ## Extra
-sudo apt-get update && sudo apt-get install python-pip python3-pip
+    sudo apt-get update && sudo apt-get install python-pip python3-pip
 
 Jtop:
-sudo pip3 install -U jetson-stats
+    sudo pip3 install -U jetson-stats
+
+then, reboot
 
 ## LINK
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
