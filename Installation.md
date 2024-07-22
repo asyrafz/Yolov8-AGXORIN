@@ -100,4 +100,4 @@ PyTorch v2.1.0
 
     <Test>
     pip3 install ultralytics
-    yolo task=detect mode=predict model=yolov8n.pt source=0 --show=true
+    yolo task=detect mode=predict model=yolov8n.pt source=0 show=true
