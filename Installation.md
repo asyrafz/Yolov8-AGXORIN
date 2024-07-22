@@ -44,9 +44,6 @@ then, reboot
     sudo apt-get install libmpi-dev
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
-
-    
-    python3 setup.py install --user  #error skip bawah
     
 ### Enviroment (below most in env directory)
     sudo apt install python3.8-venv;
