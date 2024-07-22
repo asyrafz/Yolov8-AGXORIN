@@ -37,7 +37,7 @@ then, reboot
     sudo apt update
 
     <recomended>
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
+    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev;
     pip3 install 'Cython<3'
     
     <option>
@@ -66,7 +66,8 @@ PyTorch v2.1.0
     git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision
 
     cd torchvision
-
+    
+    export BUILD_VERSION=0.16.1
     python3 setup.py install --user 
 
     <atau>
@@ -74,9 +75,22 @@ PyTorch v2.1.0
     
 ### TORCH - 2.1.0
     <Goto link Download torch 2.1.0>
-    cd Downloads
+    cd Downloads;
     
-    pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+    pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+
+    <atau>
+    wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+    pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+
+    < repeat untill forever>
+    
+###TEST TORCH with cuda
+    import torch;
+    print(torch.cuda.is_available())
+
+    <check if it true>
+
 
 ### YOLOv8
     git clone https://github.com/ultralytics/yolov8.git
@@ -85,4 +99,4 @@ PyTorch v2.1.0
     pip3 install -r requirements.txt
 
     <Test>
-    yolo task=detect mode=predict model=yolov8n.pt source=1 --show=true
+    yolo task=detect mode=predict model=yolov8n.pt source=0 --show=true
