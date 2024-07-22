@@ -18,14 +18,6 @@ Tutorial Setup Yolov8 into Jetson AGX Orin Developer Kit
 
 then, reboot
 
-## LINK
-https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
-
-PyTorch v2.1.0
-
-    JetPack 5.1 (L4T R35.2.1) / JetPack 5.1.1 (L4T R35.3.1) / JetPack 5.1.2 (L4T R35.4.1)
-        Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
-
 ### Path reg
     sudo apt update
     
@@ -55,6 +47,15 @@ PyTorch v2.1.0
 
     
     python3 setup.py install --user  #error skip bawah
+
+
+### LINK
+https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
+
+PyTorch v2.1.0
+
+    JetPack 5.1 (L4T R35.2.1) / JetPack 5.1.1 (L4T R35.3.1) / JetPack 5.1.2 (L4T R35.4.1)
+        Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
     
 ### TORCH - 2.1.0
     <Goto link Download torch 2.1.0>
