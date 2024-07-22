@@ -35,7 +35,7 @@ PyTorch v2.1.0
 
     export PATH=/usr/local/cuda-11.4/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH
-    
+    <add below>
     export PATH=/home/agx_orin/.local/bin:$PATH
     export LD_LIBRARY_PATH=/usr/lib/openblas-base/
     export BUILD_VERSION=0.16.1
