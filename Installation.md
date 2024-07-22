@@ -104,6 +104,10 @@ PyTorch v2.1.0
 
     <check if it true>
 
+### <extra custom>
+sudo nvpmodel -m 0
+sudo jetson_clocks
+
 
 ### YOLOv8
     git clone https://github.com/ultralytics/yolov8.git
