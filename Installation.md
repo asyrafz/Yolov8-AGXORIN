@@ -8,7 +8,13 @@ Tutorial Setup Yolov8 into Jetson AGX Orin Developer Kit
 - CUDA: 11.4.315
 - cuDNN: 8.6.0.166
 - TensorRT: 8.5.2.2
-- Jetpack: 5.1.2 
+- Jetpack: 5.1.2
+
+## Extra
+sudo apt-get update && sudo apt-get install python-pip python3-pip
+
+Jtop:
+pip install jetson-stats
 
 ## LINK
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
