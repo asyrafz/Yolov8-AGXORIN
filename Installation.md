@@ -72,6 +72,14 @@ PyTorch v2.1.0
 
     <atau>
     pip3 install -v torchvision==0.16.1
+
+    <atau>
+    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev;
+    git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision;
+    cd torchvision
+    export BUILD_VERSION=0.16.1;
+    python3 setup.py install --user;
+    
     
 ### TORCH - 2.1.0
     <Goto link Download torch 2.1.0>
@@ -82,8 +90,13 @@ PyTorch v2.1.0
     <atau>
     wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
     pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
-
-    < repeat untill forever>
+    
+    <try>
+    wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+    sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
+    pip3 install 'Cython<3'
+    pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+    
     
 ###TEST TORCH with cuda
     import torch;
