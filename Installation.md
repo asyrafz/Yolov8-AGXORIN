@@ -37,7 +37,7 @@ then, reboot
     sudo apt update
 
     <recomended>
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev;
+    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev libpng-dev;
     pip3 install 'Cython<3'
     
     <option>
