@@ -62,21 +62,21 @@ PyTorch v2.1.0
     JetPack 5.1 (L4T R35.2.1) / JetPack 5.1.1 (L4T R35.3.1) / JetPack 5.1.2 (L4T R35.4.1)
         Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
 
-    
+### TORCHVISION - 0.16.1
+    git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision
+
+    cd torchvision
+
+    python3 setup.py install --user 
+
+    <atau>
+    pip3 install -v torchvision==0.16.1
     
 ### TORCH - 2.1.0
     <Goto link Download torch 2.1.0>
     cd Downloads
     
     pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
-
-
-### TORCHVISION - 0.16.1
-    git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision
-
-    cd torchvision
-
-    python3 setup.py install --user
 
 ### YOLOv8
     git clone https://github.com/ultralytics/yolov8.git
