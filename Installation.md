@@ -99,4 +99,5 @@ PyTorch v2.1.0
     pip3 install -r requirements.txt
 
     <Test>
+    pip3 install ultralytics
     yolo task=detect mode=predict model=yolov8n.pt source=0 --show=true
