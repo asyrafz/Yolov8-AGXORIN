@@ -54,10 +54,10 @@ PyTorch v2.1.0
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
 
     
-    python3 setup.py install --user
+    python3 setup.py install --user  #error skip bawah
     
 ### TORCH - 2.1.0
-    <Home>
+    <Goto link Download torch 2.1.0 
     
     pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
 
