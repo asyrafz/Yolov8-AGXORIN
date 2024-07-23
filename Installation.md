@@ -92,7 +92,7 @@ PyTorch v2.1.0
  ### try esok tapi kene ubah gpu 113
     pip install torch==2.1.0 torchvision==0.16.1 --index-url https://download.pytorch.org/whl/cu113
     
-###TEST TORCH with cuda
+### TEST TORCH with cuda
     import torch;
     print(torch.cuda.is_available())
 
