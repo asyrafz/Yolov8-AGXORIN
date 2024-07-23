@@ -38,7 +38,7 @@ then, reboot
 
     <recomended>
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev libpng-dev;
-    pip3 install 'Cython<3'
+    python3.8 -m pip install 'Cython<3'
     
     <option>
     sudo apt-get install libmpi-dev
@@ -47,11 +47,13 @@ then, reboot
     
 ### Enviroment (below most in env directory)
     sudo apt install python3.8-venv;
+    
+    <masuk dalam enviroment>
     python3 -m venv yolov8_env;
     source yolov8_env/bin/activate;
 
 ## Check what in env PIP3
-    pip3 list
+    pip list
 
 ### LINK
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
@@ -61,6 +63,8 @@ PyTorch v2.1.0
 
     JetPack 5.1 (L4T R35.2.1) / JetPack 5.1.1 (L4T R35.3.1) / JetPack 5.1.2 (L4T R35.4.1)
         Python 3.8 - torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl 6.9k
+python3.8 -m pip install --upgrade  pip
+python3.8 -m pip install --update  pip
 
 ### TORCHVISION - 0.16.1
     
@@ -69,46 +73,26 @@ PyTorch v2.1.0
     git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision;  # ade yg buat jadi
     https://github.com/pytorch/vision torchvision <xpun download pastu paste kat home >
     cd torchvision
-    export BUILD_VERSION=0.16.1;
-    python3 setup.py install --user;
-    
+    export BUILD_VERSION=0.16.2; #check dalam version.txt
+    python3.8 -m setup.py install --user;
     
 ### TORCH - 2.1.0
     <Goto link Download torch 2.1.0>
     cd Downloads; <atau paste ke Home>
     
-    pip3 install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+    python3.8 -m pip install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
 
     <atau>
-    
-    pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
-    
-    <try>
+
     wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
     sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
-    pip3 install 'Cython<3'
-    pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
-    
- ### try esok tapi kene ubah gpu 113
-    pip install torch==2.1.0 torchvision==0.16.1 --index-url https://download.pytorch.org/whl/cu113
+    python3.8 -m pip install 'Cython<3'
+    python3.8 -m pip install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+
     
 ### TEST TORCH with cuda
-    import torch;
-    print(torch.cuda.is_available())
 
-    <check if it true>
-
-### <extra custom>
-sudo nvpmodel -m 0
-sudo jetson_clocks
-
+    python3.8 -c "import torch;print(torch.cuda.is_available())"
 
 ### YOLOv8
-    git clone https://github.com/ultralytics/yolov8.git
-    cd yolov8
-    git checkout v8.0
-    pip3 install -r requirements.txt
-
-    <Test>
-    pip3 install ultralytics
-    yolo task=detect mode=predict model=yolov8n.pt source=0 show=true
+    hanya boleh guna code.py <download>
