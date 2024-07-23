@@ -53,7 +53,7 @@ then, reboot
     source yolov8_env/bin/activate;
 
 ## Check what in env PIP3
-    pip list
+    python3.8 -m pip list
 
 ### LINK
 https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048
