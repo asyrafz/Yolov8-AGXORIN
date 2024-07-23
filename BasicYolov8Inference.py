@@ -10,8 +10,8 @@ if __name__ == '__main__':
 
     cap = cv2.VideoCapture(0)
 
-    #model = YOLO('yolov8n.pt')
-    model = YOLO('yolov8x04072024.pt')
+    model = YOLO('yolov8n.pt')
+    #model = YOLO('yolov8x04072024.pt')
     model.to(device)
 
     while cap.isOpened():
