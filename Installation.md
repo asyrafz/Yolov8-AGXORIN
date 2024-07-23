@@ -49,7 +49,7 @@ then, reboot
     sudo apt install python3.8-venv;
     
     <masuk dalam enviroment>
-    python3 -m venv yolov8_env;
+    python3.8 -m venv yolov8_env;
     source yolov8_env/bin/activate;
 
 ## Check what in env PIP3
