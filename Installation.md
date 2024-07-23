@@ -30,7 +30,7 @@ then, reboot
     <add below>
     export PATH=/home/agx_orin/.local/bin:$PATH
     export LD_LIBRARY_PATH=/usr/lib/openblas-base/
-    export BUILD_VERSION=0.16.1
+    export BUILD_VERSION=0.16.2
         
 ### Dependency
     <Home>
