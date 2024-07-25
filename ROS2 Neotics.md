@@ -20,3 +20,12 @@
 
     source /opt/ros/noetic/setup.bash
 
+## Dependencies for building packages
+
+    sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+### Initialize rosdep
+    sudo apt install python3-rosdep
+###
+    sudo rosdep init
+###
+    rosdep update
