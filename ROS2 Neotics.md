@@ -19,6 +19,10 @@
 ## Environment setup
 
     source /opt/ros/noetic/setup.bash
+###
+    echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+###
+    source ~/.bashrc
 
 ## Dependencies for building packages
 
