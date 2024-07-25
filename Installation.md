@@ -66,30 +66,28 @@ PyTorch v2.1.0
 python3.8 -m pip install --upgrade  pip
 python3.8 -m pip install --update  pip
 
-### TORCHVISION - 0.16.1
-    
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev;
-    <https://forums.developer.nvidia.com/t/cannot-compile-torchvision-0-16/289075/7>
-    git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision;  # ade yg buat jadi
-    https://github.com/pytorch/vision torchvision <xpun download pastu paste kat home >
-    cd torchvision
-    export BUILD_VERSION=0.16.2; #check dalam version.txt
-    python3.8 -m setup.py install --user;
-    
 ### TORCH - 2.1.0
-    <Goto link Download torch 2.1.0>
-    cd Downloads; <atau paste ke Home>
+    https://developer.download.nvidia.cn/compute/redist/jp/v512/pytorch/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+
+    sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev libjpeg-turbo
     
-    python3.8 -m pip install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+    pip3 install 'Cython<3'
 
-    <atau>
+    pip3 install numpy torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
 
-    wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
-    sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
-    python3.8 -m pip install 'Cython<3'
-    python3.8 -m pip install torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl;
+### TORCHVISION - 0.16.1
+    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
 
-    
+    git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision
+
+    cd torchvision
+
+    export BUILD_VERSION=0.16.1
+
+    python3 setup.py install --user
+
+    cd ../
+
 ### TEST TORCH with cuda
 
     python3.8 -c "import torch;print(torch.cuda.is_available())"
