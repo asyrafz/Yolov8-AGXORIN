@@ -27,28 +27,18 @@ then, reboot
 
     export PATH=/usr/local/cuda-11.4/bin:$PATH
     export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH
-    <add below>
+    
+<add below>
+    
     export PATH=/home/agx_orin/.local/bin:$PATH
     export LD_LIBRARY_PATH=/usr/lib/openblas-base/
     export BUILD_VERSION=0.16.2
-        
-### Dependency
-    <Home>
-    sudo apt update
 
-    <recomended>
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev libpng-dev;
-    python3.8 -m pip install 'Cython<3'
-    
-    <option>
-    sudo apt-get install libmpi-dev
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
-    sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
     
 ### Enviroment (below most in env directory)
     sudo apt install python3.8-venv;
     
-    <masuk dalam enviroment>
+<masuk dalam enviroment>
     python3.8 -m venv yolov8_env;
     source yolov8_env/bin/activate;
 
@@ -78,13 +68,15 @@ python3.8 -m pip install --update  pip
 ### TORCHVISION - 0.16.1
     sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
 
+< Y capital not y >
+
     git clone --branch v0.16.1 https://github.com/pytorch/vision torchvision
 
     cd torchvision
 
     export BUILD_VERSION=0.16.1
 
-    python3 setup.py install --user
+    python3 setup.py install
 
     cd ../
 
@@ -93,4 +85,4 @@ python3.8 -m pip install --update  pip
     python3.8 -c "import torch;print(torch.cuda.is_available())"
 
 ### YOLOv8
-    hanya boleh guna code.py <download>
+    pip3 install ultralytics
