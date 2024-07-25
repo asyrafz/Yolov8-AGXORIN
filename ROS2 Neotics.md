@@ -33,3 +33,6 @@
     sudo rosdep init
 ###
     rosdep update
+    
+## Check Ros Installed
+    roscore
