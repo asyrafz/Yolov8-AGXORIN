@@ -40,9 +40,9 @@ def main():
 
         results = process_frame(frame, model, device)
         print_detected_classes(results)
-        annotated_frame = annotate_frame(results)
-
+        annotated_frame = cv2.cvtColor(annotate_frame(results), cv2.COLOR_BGR2RGB)
         cv2.imshow("Y8", annotated_frame)
+
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
