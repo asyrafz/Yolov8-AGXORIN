@@ -2,9 +2,7 @@
 <p align="center" width="100%">
     <img width="33%" src="[https://i.stack.imgur.com/RJj4x.png](https://github.com/user-attachments/assets/d08ac91d-57a3-47a4-bef2-b1d03b4f27a7)"> 
 </p>
-<p style="text-align:center">
-   <img src="https://github.com/user-attachments/assets/d08ac91d-57a3-47a4-bef2-b1d03b4f27a7" />
-</p>
+
 ### Set up the workspace
 
 Step 1-7 refering to [E-Consystems.com](https://www.e-consystems.com/blog/camera/products/all-you-need-to-know-about-how-to-install-ros2-on-jetson-orin-using-nilecam81/?srsltid=AfmBOoppc5dbTDD7Q748CfQvNCjXBgAuqpdomlP48yyHNatd9u0OIOHG)
