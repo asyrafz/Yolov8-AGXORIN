@@ -95,6 +95,12 @@ Now, let’s create a package named cv_basics.
 
 7. Then, Create the Python script for Publisher and Subscriber
 
+###
+
+https://foxglove.dev/blog/using-rosbridge-with-ros2
+
+
+
 
 
 
