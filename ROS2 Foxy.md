@@ -1,6 +1,6 @@
 ## How to install ROS2 on Orin
 <p align="center">
-![foxyfitzroy](https://github.com/user-attachments/assets/d08ac91d-57a3-47a4-bef2-b1d03b4f27a7)
+   <img src="https://github.com/user-attachments/assets/d08ac91d-57a3-47a4-bef2-b1d03b4f27a7" />
 </p>
 ### Set up the workspace
 
