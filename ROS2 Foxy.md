@@ -30,7 +30,8 @@
       rosdep install -i --from-path src --rosdistro foxy -y
    
 ###
-   
+   ![rosdep-install-i-from-path-src-rosdistro-foxy-y](https://github.com/user-attachments/assets/27678c97-97d6-4500-a866-dbe65fcd794e)
+
 ###
 
 
