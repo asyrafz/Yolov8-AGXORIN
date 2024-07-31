@@ -1,6 +1,9 @@
 Set up the workspace
 
 1. Open the Terminal and create a workspace and move to the folder
+   
+###
+
     mkdir -p ~/ros2_ws/src
    
 ###
