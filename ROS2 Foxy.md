@@ -1,7 +1,7 @@
 ## How to install ROS2 on Orin
 
 <p align="center" width="100%">
-    <img width="33%" src="[https://www.google.com/urlsa=i&url=https%3A%2F%2Fwww.openrobotics.org%2Fblog%2F2020%2F6%2F5%2Fros-2-foxy-fitzroy-release&psig=AOvVaw1pxbW0uOxcgn_c5LxaRZ0T&ust=1722482090366000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMieu_qn0IcDFQAAAAAdAAAAABAE](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.openrobotics.org%2Fblog%2F2020%2F6%2F5%2Fros-2-foxy-fitzroy-release&psig=AOvVaw1pxbW0uOxcgn_c5LxaRZ0T&ust=1722482090366000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMieu_qn0IcDFQAAAAAdAAAAABAE)"> 
+    <img width="33%" src="https://images.squarespace-cdn.com/content/v1/606d378755a86f589aa297b7/1620754015606-3M9GLQWXM2CMTLKQAZ70/103c1-d6fd5322bd2ddc06530d8352fcab20f0bca08c06_2_420x500.png"> 
 </p>
 
 ### Set up the workspace
