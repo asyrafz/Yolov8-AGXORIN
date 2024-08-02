@@ -76,8 +76,38 @@ Then add the repository to your sources list.
 <p>
 
         sudo rosdep init
-        rosdep update
+        rosdep update  <<<<<<<< JA01 berhenti sini <<<<
         rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
+
+
+## Install ROS Bridge
+
+Clone the ROS Bridge repository:
+
+        cd ~/ros2_foxy/src
+        git clone https://github.com/RobotWebTools/rosbridge_suite.git
+
+Build the workspace:
+
+        cd ~/ros2_foxy
+        colcon build --packages-select rosbridge_suite
+
+----
+
+### Run ROS Bridge
+
+Start a ROS2 node:
+
+        ros2 run rosbridge_server rosbridge_websocket
+
+### Verify Installation
+
+Check if the ROS Bridge server is running:
+
+        ros2 node list
+You should see a node named rosbridge_websocket.
+Use a WebSocket client (like a web browser with a WebSocket extension) to connect to ws://localhost:9090 (default port).
+
 
 
 
