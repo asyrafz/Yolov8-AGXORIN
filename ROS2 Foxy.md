@@ -73,7 +73,7 @@ Then add the repository to your sources list.
 ### Install dependencies using rosdep
 
         sudo apt upgrade        
-<p></p>
+<p>
 
         sudo rosdep init
         rosdep update
