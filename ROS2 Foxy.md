@@ -64,11 +64,19 @@ Then add the repository to your sources list.
         sudo apt install --no-install-recommends -y \
           libcunit1-dev
 
+### Get ROS 2 code
+        
+        mkdir -p ~/ros2_foxy/src
+        cd ~/ros2_foxy
+        vcs import --input https://raw.githubusercontent.com/ros2/ros2/foxy/ros2.repos src
 
+### Install dependencies using rosdep
 
+        sudo apt upgrade
 
-
-
+        sudo rosdep init
+        rosdep update
+        rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
 
 
 
