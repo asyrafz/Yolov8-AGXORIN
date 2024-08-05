@@ -89,7 +89,7 @@ OR if error
         rosdep update
         sudo apt-get install ros-foxy-desktop
 
-### Test "fastrtps" installed properly
+## Test "fastrtps" installed properly
 
         dpkg -l | grep fastrtps
         python3 -c "import pyfastdds"
@@ -119,6 +119,12 @@ Build the workspace:
         cd ~/ros2_foxy
         colcon build --packages-select rosbridge_suite
 
+If the script runs successfully, it means that the fastrtps library is working properly. 
+
+    ros2 pkg list | grep fastrtps
+    ros2 run demo_nodes_py talker
+    sudo apt-get install ros-foxy-pyfastdds
+    
 ----
 
 ### Run ROS Bridge
