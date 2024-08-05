@@ -94,7 +94,7 @@ OR if error
         dpkg -l | grep fastrtps
         python3 -c "import pyfastdds"
 
-make example.py
+make example.py  <<<<<<update>>>> abaikan dulu sebab nak fokus rosbridge
 
         import pyfastdds
         # Create a DomainParticipant
