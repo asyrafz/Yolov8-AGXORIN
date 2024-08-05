@@ -121,9 +121,9 @@ Build the workspace:
 
 If the script runs successfully, it means that the fastrtps library is working properly. 
 
-    ros2 pkg list | grep fastrtps
-    ros2 run demo_nodes_py talker
-    sudo apt-get install ros-foxy-pyfastdds
+        ros2 pkg list | grep fastrtps
+        ros2 run demo_nodes_py talker
+        sudo apt-get install ros-foxy-pyfastdds
     
 ----
 
@@ -153,6 +153,28 @@ always start (register permanent into bashrc)
 Check if the ROS Bridge server is running:
         
         ros2 node list
+
+## Install MQTT for Ros2 Foxy
+
+1. Update your package lists:
+
+        sudo apt update
+
+2. Install the ROS 2 MQTT bridge package:
+
+        sudo apt install ros-foxy-mqtt-bridge <<<ERROR>>>
+
+3. If not already installed, ypu may need the MQTT client library:
+   
+        sudo apt install python3-pip
+        pip3 install paho-mqtt
+
+4. Source ROS2 env
+   
+        source /opt/ros/foxy/setup.bash
+5. To use MQTT bridge, need to create a configuration file and a launch file
+
+
 
 
 
