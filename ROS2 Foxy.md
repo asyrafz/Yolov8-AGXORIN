@@ -77,6 +77,7 @@ Then add the repository to your sources list.
 
         sudo rosdep init
         rosdep update  <<<<<<<< JA01 berhenti sini <<<<
+        export ROS_DISTRO=foxy
         rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
 
 
