@@ -129,18 +129,30 @@ If the script runs successfully, it means that the fastrtps library is working p
 
 ### Run ROS Bridge
 
-Start a ROS2 node:
+Install ROS2 Foxy rosbridge suite
+        
+        sudo apt update
+        sudo apt upgrade
 
-        ros2 run rosbridge_server rosbridge_websocket
+Install the rosbridge suite
+        
+        sudo apt install ros-foxy-rosbridge-suite
+        source /opt/ros/foxy/setup.bash
+
+source your ROS 2 environment:
+
+        ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
 
 ### Verify Installation
 
+always start (register permanent into bashrc)
+
+        echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+
 Check if the ROS Bridge server is running:
-
+        
         ros2 node list
-You should see a node named rosbridge_websocket.
-Use a WebSocket client (like a web browser with a WebSocket extension) to connect to ws://localhost:9090 (default port).
-
 
 
 
