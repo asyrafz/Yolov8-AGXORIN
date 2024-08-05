@@ -74,7 +74,7 @@ Then add the repository to your sources list.
 
         sudo apt upgrade        
 
-in :~/ros2_foxy/src$
+in :~/ros2_foxy
 
         sudo rosdep init
         rosdep update  <<<<<<<< JA01 berhenti sini <<<<
