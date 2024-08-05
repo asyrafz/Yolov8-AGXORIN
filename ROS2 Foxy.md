@@ -89,6 +89,23 @@ OR if error
         rosdep update
         sudo apt-get install ros-foxy-desktop
 
+### Test "fastrtps" installed properly
+
+        dpkg -l | grep fastrtps
+        python3 -c "import pyfastdds"
+
+make example.py
+
+        import pyfastdds
+        # Create a DomainParticipant
+        participant = pyfastdds.DomainParticipant(0)
+        # Create a Topic
+        topic = participant.create_topic("example_topic", "example_type")
+        print("Topic created:", topic.get_name())
+
+### run example.py
+
+        python3 example.py
 
 ## Install ROS Bridge
 
