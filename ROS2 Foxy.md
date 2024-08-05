@@ -73,11 +73,13 @@ Then add the repository to your sources list.
 ### Install dependencies using rosdep
 
         sudo apt upgrade        
-<p>
+
+in :~/ros2_foxy/src$
 
         sudo rosdep init
         rosdep update  <<<<<<<< JA01 berhenti sini <<<<
         export ROS_DISTRO=foxy
+        export ROS_PYTHON_VERSION=3
         rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
 
 
