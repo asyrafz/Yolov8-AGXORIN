@@ -82,6 +82,13 @@ in :~/ros2_foxy
         export ROS_PYTHON_VERSION=3
         rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
 
+OR if error
+
+        sudo apt-get install ros-foxy-fastrtps
+        sudo rosdep init
+        rosdep update
+        sudo apt-get install ros-foxy-desktop
+
 
 ## Install ROS Bridge
 
