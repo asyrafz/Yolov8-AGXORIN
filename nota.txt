@@ -1,0 +1,12 @@
+git clone https://github.com/microsoft/onnxruntime.git
+
+cd onnxruntime
+
+cmake -DCMAKE_BUILD_TYPE=Release -DONNXRUNTIME_BUILD_CUDA=ON -DONNXRUNTIME_BUILD_CUDNN=ON.
+make
+
+sudo make install
+
+onnxruntime --version
+
+onnxruntime --list-devices
