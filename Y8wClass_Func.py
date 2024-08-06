@@ -1,52 +1,66 @@
 import cv2
 import torch
+import numpy as np
 from ultralytics import YOLO
 
-def init_model(model_path):
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    print(f"Using device: {device}")
-    model = YOLO(model_path)
-    model.to(device)
-    return model, device
-
 def process_frame(frame, model, device):
+    # Convert frame to RGB
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    results = model(frame_rgb, device=device)
-    return results
 
-def print_detected_classes(results):
-    detected_classes = results[0].boxes.cls
-    class_names = results[0].names
-    
-    if len(detected_classes) > 0:
-        print("\nDetected classes:")
-        for cls in detected_classes:
-            class_name = class_names[int(cls)]
-            print(f"- {class_name}")
-    else:
-        print("\nNo objects detected")
+    with torch.no_grad():  # Disable gradient calculation
+        # Perform inference
+        results = model(frame_rgb, device=device)
 
-def annotate_frame(results):
-    return results[0].plot()
+    # Extract bounding boxes, scores, and class IDs
+    boxes = results[0].boxes.xyxy.cpu().numpy()
+    scores = results[0].boxes.conf.cpu().numpy()
+    class_ids = results[0].boxes.cls.cpu().numpy()
+
+    # Draw bounding boxes and print class labels
+    annotated_frame = frame.copy()
+    for box, score, class_id in zip(boxes, scores, class_ids):
+        if score > 0.5:  # Confidence threshold
+            x1, y1, x2, y2 = box.astype(int)  # Ensure coordinates are integers
+            label = f'{model.names[int(class_id)]} {score:.2f}'
+            cv2.rectangle(annotated_frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
+            cv2.putText(annotated_frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+            # Print class label and confidence
+            print(f'Class: {model.names[int(class_id)]}, Confidence: {score:.2f}')
+
+    return annotated_frame
 
 def main():
-    model, device = init_model('yolov8n.pt')
-    cap = cv2.VideoCapture(0)
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    print(f"Using device: {device}")
 
-    while cap.isOpened():
-        success, frame = cap.read()
-        if not success:
+    # Initialize video capture for two cameras
+    cap1 = cv2.VideoCapture(0)
+    cap2 = cv2.VideoCapture(2)
+    model = YOLO('yolov8n.pt')  # Adjust the model path as needed
+    model.to(device)
+
+    while cap1.isOpened() and cap2.isOpened():
+        success1, frame1 = cap1.read()
+        success2, frame2 = cap2.read()
+
+        if success1 and success2:
+            # Process both frames
+            annotated_frame1 = process_frame(frame1, model, device)
+            annotated_frame2 = process_frame(frame2, model, device)
+
+            # Display the frames
+            cv2.imshow("YOLOv8 Detection - Camera 1", annotated_frame1)
+            cv2.imshow("YOLOv8 Detection - Camera 2", annotated_frame2)
+
+            # Break the loop on 'q' key press
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+        else:
             break
 
-        results = process_frame(frame, model, device)
-        print_detected_classes(results)
-        annotated_frame = cv2.cvtColor(annotate_frame(results), cv2.COLOR_BGR2RGB)
-        cv2.imshow("Y8", annotated_frame)
-
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            break
-
-    cap.release()
+    cap1.release()
+    cap2.release()
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
