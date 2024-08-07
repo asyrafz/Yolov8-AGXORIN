@@ -150,8 +150,9 @@ always start (register permanent into bashrc)
 
         echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 
-Check if the ROS Bridge server is running:
-        
+Check if the ROS Bridge server is running: new terminal
+
+        source /opt/ros/foxy/setup.bash
         ros2 node list
 
 ## Install MQTT for Ros2 Foxy
