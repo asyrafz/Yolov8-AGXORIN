@@ -175,6 +175,8 @@ Check if the ROS Bridge server is running: new terminal
         source /opt/ros/foxy/setup.bash
 5. To use MQTT bridge, need to create a configuration file and a launch file
 
+        pip3 install paho-mqtt
+
 
 
 
