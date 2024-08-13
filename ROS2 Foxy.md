@@ -72,40 +72,25 @@ Then add the repository to your sources list.
 
 ### Install dependencies using rosdep
 
-        sudo apt upgrade        
+        sudo apt update
+        sudo apt upgrade
 
-in :~/ros2_foxy
-
-        sudo rosdep init
-        rosdep update  <<<<<<<< JA01 berhenti sini <<<<
-        export ROS_DISTRO=foxy
-        export ROS_PYTHON_VERSION=3
-        rosdep install --from-paths src --ignore-src -y --skip-keys "fastcdr rti-connext-dds-5.3.1 urdfdom_headers"
-
-OR if error
-
-        sudo apt-get install ros-foxy-fastrtps
-        sudo rosdep init
-        rosdep update
+        sudo apt install ros-foxy-desktop python3-argcomplete
+        
         sudo apt-get install ros-foxy-desktop
 
-## Test "fastrtps" installed properly
+### Try / Test example
 
-        dpkg -l | grep fastrtps
-        python3 -c "import pyfastdds"
+terminal 1:
 
-make example.py  <<<<<<update>>>> abaikan dulu sebab nak fokus rosbridge
+        source /opt/ros/foxy/setup.bash
+        ros2 run demo_nodes_cpp talker
 
-        import pyfastdds
-        # Create a DomainParticipant
-        participant = pyfastdds.DomainParticipant(0)
-        # Create a Topic
-        topic = participant.create_topic("example_topic", "example_type")
-        print("Topic created:", topic.get_name())
+terminal 2:
 
-### run example.py
+        source /opt/ros/foxy/setup.bash
+        ros2 run demo_nodes_py listener
 
-        python3 example.py
 
 ## Install ROS Bridge
 
