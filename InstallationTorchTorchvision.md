@@ -76,7 +76,7 @@ python3.8 -m pip install --update  pip
 
     export BUILD_VERSION=0.16.1
 
-    python3 setup.py install
+    python3 setup.py install --user
 
     cd ../
 
