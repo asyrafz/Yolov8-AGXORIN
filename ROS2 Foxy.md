@@ -144,14 +144,6 @@ Check if the ROS Bridge server is running: new terminal
         sudo apt install python3-pip
         pip3 install paho-mqtt
 
-3. Source ROS2 env
-   
-        source /opt/ros/foxy/setup.bash
-4. To use MQTT bridge, need to create a configuration file and a launch file
-
-        pip3 install paho-mqtt
-
-
 
 
 
