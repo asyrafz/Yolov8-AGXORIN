@@ -4,7 +4,7 @@
     <img width="33%" src="https://images.squarespace-cdn.com/content/v1/606d378755a86f589aa297b7/1620754015606-3M9GLQWXM2CMTLKQAZ70/103c1-d6fd5322bd2ddc06530d8352fcab20f0bca08c06_2_420x500.png"> 
 </p>
 
-### System Setup
+### System Setup 👾
 
 ### Set Locale
 
@@ -79,7 +79,7 @@ Then add the repository to your sources list.
         
         sudo apt-get install ros-foxy-desktop
 
-### Try / Test example
+### Try / Test example 🔬
 
 terminal 1:
 
@@ -112,7 +112,7 @@ If the script runs successfully, it means that the fastrtps library is working p
     
 ----
 
-### Run ROS Bridge
+### Run ROS Bridge 🎢 
 
 Install ROS2 Foxy rosbridge suite
         
