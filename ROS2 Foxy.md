@@ -79,6 +79,9 @@ Then add the repository to your sources list.
         
         sudo apt-get install ros-foxy-desktop
 
+### Source into bashrc
+        echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+
 ### Try / Test example 🔬
 
 terminal 1:
