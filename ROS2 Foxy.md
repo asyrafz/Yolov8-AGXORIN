@@ -147,7 +147,19 @@ Check if the ROS Bridge server is running: new terminal
         sudo apt install python3-pip
         pip3 install paho-mqtt
 
+## run code
 
+        cd ros2_emerge_ws /
+        colcon build
+
+###
+
+        source install/setup.bash
+
+###
+
+        ros2 launch detection_ros2 detection_launch.py
+        
 
 
 
