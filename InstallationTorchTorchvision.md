@@ -22,7 +22,7 @@ then, reboot
 
 [<kbd> <br> Title <br> </kbd>][Link]
 
-[Link]: # '[Link with example title.](https://vscode.download.prss.microsoft.com/dbazure/download/stable/eaa41d57266683296de7d118f574d0c2652e1fc4/code_1.92.1-1723064751_arm64.deb)'
+[Link]: # 'https://vscode.download.prss.microsoft.com/dbazure/download/stable/eaa41d57266683296de7d118f574d0c2652e1fc4/code_1.92.1-1723064751_arm64.deb'
 
     sudo apt install ./code_1.92.1-1723064751_arm64.deb
 
